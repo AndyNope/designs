@@ -1,84 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 628.09 337.84">
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 224.06 127.44">
   <defs>
     <style>
       .cls-1 {
-        letter-spacing: -.02em;
+        fill: url(#Unbenannter_Verlauf_10-2);
       }
 
       .cls-2 {
-        letter-spacing: -.08em;
+        letter-spacing: 0em;
       }
 
-      .cls-3, .cls-4, .cls-5 {
-        fill: #009fe3;
-      }
-
-      .cls-6 {
+      .cls-3 {
         letter-spacing: .02em;
       }
 
-      .cls-7 {
-        letter-spacing: .03em;
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_10-3);
       }
 
-      .cls-8 {
-        letter-spacing: -.03em;
-      }
-
-      .cls-9 {
-        fill: url(#Unbenannter_Verlauf_35);
-        opacity: .23;
-      }
-
-      .cls-10 {
-        fill: #606479;
-      }
-
-      .cls-11 {
-        letter-spacing: -.17em;
-      }
-
-      .cls-12 {
+      .cls-5 {
         letter-spacing: -.05em;
       }
 
-      .cls-4 {
-        font-family: Perpetua, Perpetua;
-        font-size: 58px;
+      .cls-6 {
+        font-size: 5.37px;
+        letter-spacing: .02em;
       }
 
-      .cls-13 {
-        letter-spacing: 0em;
+      .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        font-size: 9.31px;
+      }
+
+      .cls-8 {
+        letter-spacing: .02em;
       }
 
       .cls-14 {
         letter-spacing: 0em;
       }
 
-      .cls-5 {
+      .cls-15 {
+        letter-spacing: .03em;
+      }
+
+      .cls-16, .cls-12 {
+        letter-spacing: .03em;
+      }
+
+      .cls-17, .cls-11 {
+        letter-spacing: .02em;
+      }
+
+      .cls-18 {
+        letter-spacing: .02em;
+      }
+
+      .cls-9, .cls-19 {
+        letter-spacing: .01em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-21 {
+        fill: url(#Unbenannter_Verlauf_35);
+        opacity: .23;
+      }
+
+      .cls-22 {
+        letter-spacing: -.17em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-23 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-24 {
+        letter-spacing: .02em;
+      }
+
+      .cls-25 {
+        letter-spacing: .03em;
+      }
+
+      .cls-26 {
+        font-family: Perpetua, Perpetua;
+        font-size: 20.77px;
+      }
+
+      .cls-26, .cls-13, .cls-27 {
+        fill: #009fe3;
+      }
+
+      .cls-28 {
+        letter-spacing: .06em;
+      }
+
+      .cls-13, .cls-27 {
         font-family: Perpetua-Italic, Perpetua;
-        font-size: 26px;
         font-style: italic;
       }
+
+      .cls-29 {
+        letter-spacing: .01em;
+      }
+
+      .cls-30 {
+        letter-spacing: .05em;
+      }
+
+      .cls-31 {
+        letter-spacing: .02em;
+      }
+
+      .cls-32 {
+        fill: url(#Unbenannter_Verlauf_10);
+      }
     </style>
-    <linearGradient id="Unbenannter_Verlauf_35" data-name="Unbenannter Verlauf 35" x1="31.92" y1="150.87" x2="613.41" y2="150.87" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Unbenannter_Verlauf_35" data-name="Unbenannter Verlauf 35" x1="9.43" y1="48.02" x2="217.63" y2="48.02" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#7ebbe7"/>
       <stop offset=".44" stop-color="#2dabe2"/>
     </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_10" data-name="Unbenannter Verlauf 10" x1="1.03" y1="57.74" x2="17.21" y2="57.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#312783"/>
+      <stop offset=".57" stop-color="#009fe3"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_10-2" data-name="Unbenannter Verlauf 10" x1="3.85" y1="87.33" x2="17.43" y2="87.33" xlink:href="#Unbenannter_Verlauf_10"/>
+    <linearGradient id="Unbenannter_Verlauf_10-3" data-name="Unbenannter Verlauf 10" x1="4.56" y1="114.45" x2="20.44" y2="114.45" xlink:href="#Unbenannter_Verlauf_10"/>
   </defs>
-  <polygon class="cls-9" points="31.92 260.28 59.32 260.67 324.19 91.7 585.25 259.14 613.41 259.14 450.53 136.98 450.91 90.17 420.47 90.17 420.85 115.29 322.29 41.08 31.92 260.28"/>
-  <text class="cls-4" transform="translate(0 45.62)"><tspan x="0" y="0">Özge</tspan><tspan class="cls-11" x="111.19" y="0"> </tspan><tspan class="cls-1" x="114.39" y="0">Y</tspan><tspan x="146.16" y="0">ilmaz</tspan></text>
-  <text class="cls-5" transform="translate(6.15 84.05)"><tspan x="0" y="0">Ih</tspan><tspan class="cls-13" x="17.6" y="0">r</tspan><tspan x="24.64" y="0">e</tspan><tspan class="cls-12" x="32.78" y="0"> </tspan><tspan x="37.34" y="0">Ansp</tspan><tspan class="cls-13" x="77.17" y="0">r</tspan><tspan x="84.22" y="0">echpa</tspan><tspan class="cls-7" x="131.64" y="0">r</tspan><tspan x="139.71" y="0">tne</tspan><tspan class="cls-6" x="165.45" y="0">r</tspan><tspan x="173.39" y="0">in</tspan></text>
-  <path class="cls-10" d="m25.65,332.34c-.28,0-.56-.04-.83-.14l-16.16-5.4c-3.24-1.08-5.42-4.11-5.42-7.53v-34.95c0-2.58,1.21-4.93,3.3-6.44,2.1-1.51,4.7-1.91,7.15-1.09l12.8,4.28c1.08.36,1.8,1.37,1.8,2.5v46.13c0,.85-.41,1.64-1.09,2.14-.46.33-.99.49-1.54.49Zm-14.49-50.68c-.55,0-1.09.17-1.55.51-.7.51-1.11,1.29-1.11,2.16v34.95c0,1.15.73,2.16,1.82,2.53l12.68,4.23v-40.57l-10.99-3.67c-.28-.1-.57-.14-.85-.14h0Zm47.44,48.63c-.85,0-1.71-.14-2.54-.42l-12.8-4.28c-1.08-.36-1.8-1.37-1.8-2.5v-46.13c0-.85.41-1.64,1.09-2.14s1.57-.63,2.38-.36l16.15,5.4c3.24,1.08,5.42,4.11,5.42,7.53v34.95c0,2.58-1.21,4.93-3.3,6.44-1.38.99-2.98,1.51-4.61,1.51Zm-11.87-9.1l10.99,3.67c.83.28,1.7.14,2.4-.36.7-.51,1.11-1.29,1.11-2.16v-34.95c0-1.15-.73-2.16-1.82-2.53l-12.68-4.23v40.57Z"/>
-  <path class="cls-3" d="m25.65,332.34c-.54,0-1.07-.16-1.52-.48-.7-.49-1.12-1.3-1.12-2.16v-46.13c0-1.11.7-2.11,1.75-2.48l18.46-6.6c.81-.29,1.71-.17,2.4.33.7.49,1.12,1.3,1.12,2.16v46.13c0,1.11-.7,2.11-1.75,2.48l-18.46,6.6c-.28.11-.59.15-.88.15Zm2.63-46.91v40.53l13.18-4.72v-40.53l-13.18,4.72h0Z"/>
-  <path class="cls-10" d="m361.54,310.83c-1.79,0-3.58-.58-5.06-1.73l-25.35-21.46c-1.16-.98-1.3-2.71-.32-3.87.98-1.16,2.71-1.3,3.87-.32l25.26,21.38c.93.71,2.35.71,3.37-.08l25.48-21.31c1.16-.97,2.89-.82,3.87.35.97,1.16.82,2.89-.35,3.87l-25.56,21.38c-1.55,1.2-3.38,1.79-5.2,1.79Z"/>
-  <path class="cls-3" d="m386.33,332.21h-49.23c-4.59,0-8.32-3.73-8.32-8.32v-35.5c0-4.59,3.73-8.32,8.32-8.32h49.23c4.59,0,8.32,3.73,8.32,8.32v35.51c0,4.59-3.74,8.32-8.32,8.32h0Zm-49.23-46.65c-1.56,0-2.83,1.27-2.83,2.83v35.51c0,1.56,1.27,2.83,2.83,2.83h49.23c1.56,0,2.83-1.27,2.83-2.83v-35.51c0-1.56-1.27-2.83-2.83-2.83h-49.23Z"/>
-  <path class="cls-3" d="m13.39,175.22c-5.09,0-9.23-4.14-9.23-9.23s4.14-9.23,9.23-9.23,9.23,4.14,9.23,9.23-4.14,9.23-9.23,9.23Zm0-13.84c-2.55,0-4.61,2.07-4.61,4.61s2.07,4.61,4.61,4.61,4.61-2.07,4.61-4.61-2.07-4.61-4.61-4.61h0Zm29.99,43.83c-5.09,0-9.23-4.14-9.23-9.23s4.14-9.22,9.23-9.22,9.23,4.14,9.23,9.23-4.14,9.22-9.23,9.22Zm0-13.84c-2.55,0-4.61,2.07-4.61,4.61s2.07,4.61,4.61,4.61,4.61-2.07,4.61-4.61-2.07-4.61-4.61-4.61Z"/>
-  <path class="cls-3" d="m42.23,205.21c-12.76,0-35.51-22.54-38.03-37.69-.21-1.25.64-2.44,1.9-2.65,1.27-.21,2.44.64,2.65,1.9,2.1,12.65,23.07,33.83,33.48,33.83,1.28,0,2.31,1.03,2.31,2.31s-1.04,2.3-2.31,2.3Z"/>
-  <path class="cls-10" d="m44.13,181.52c-.76,0-1.51-.38-1.95-1.07-3.25-5.13-7.66-9.59-12.74-12.9-1.07-.7-1.37-2.12-.67-3.19s2.12-1.37,3.2-.67c5.63,3.67,10.52,8.61,14.12,14.3.68,1.08.36,2.5-.71,3.18-.38.24-.81.35-1.23.35h0Zm8.84-3.11c-.79,0-1.57-.41-2-1.15-4.42-7.61-10.76-14.02-18.32-18.52-1.09-.65-1.45-2.07-.8-3.16.65-1.09,2.07-1.45,3.16-.8,8.24,4.9,15.14,11.88,19.95,20.16.64,1.1.26,2.51-.84,3.15-.36.22-.76.31-1.16.31h0Z"/>
-  <text class="cls-5" transform="translate(90.62 297.75)"><tspan x="0" y="0">Reb</tspan><tspan class="cls-13" x="30.89" y="0">r</tspan><tspan x="37.93" y="0">einst</tspan><tspan class="cls-8" x="76.41" y="0">r</tspan><tspan x="82.94" y="0">asse 64</tspan><tspan x="0" y="31.2">8106 Re</tspan><tspan class="cls-1" x="74.88" y="31.2">g</tspan><tspan x="84.49" y="31.2">ensdorf</tspan></text>
-  <text class="cls-5" transform="translate(69.72 170.04)"><tspan x="0" y="0">+4144 870 20 00</tspan><tspan x="0" y="31.2">+4179 870 20 00</tspan></text>
-  <text class="cls-5" transform="translate(410.48 299.34)"><tspan x="0" y="0">in</tspan><tspan class="cls-1" x="17.09" y="0">f</tspan><tspan x="22.94" y="0">o@homeliving-ca</tspan><tspan class="cls-13" x="174.55" y="0">r</tspan><tspan class="cls-14" x="181.59" y="0">e</tspan><tspan x="189.86" y="0">.ch</tspan><tspan x="0" y="31.2">w w </tspan><tspan class="cls-2" x="38.21" y="31.2">w</tspan><tspan x="49.51" y="31.2">.homeliving-ca</tspan><tspan class="cls-13" x="174.46" y="31.2">r</tspan><tspan class="cls-14" x="181.5" y="31.2">e</tspan><tspan x="189.77" y="31.2">.ch</tspan></text>
-  <image width="225" height="225" transform="translate(459.34 3.43) scale(.75)" xlink:href="qrsite.png"/>
+  <polygon class="cls-21" points="9.43 87.19 19.24 87.33 114.08 26.83 207.55 86.79 217.63 86.79 159.31 43.05 159.45 26.29 148.55 26.29 148.69 35.28 113.4 8.71 9.43 87.19"/>
+  <text class="cls-26" transform="translate(0 16.33)"><tspan x="0" y="0">Özge</tspan><tspan class="cls-22" x="39.81" y="0"> </tspan><tspan class="cls-20" x="40.96" y="0">Y</tspan><tspan x="52.33" y="0">ilmaz</tspan></text>
+  <text class="cls-13" transform="translate(2.2 30.09)"><tspan class="cls-15" x="0" y="0">Ih</tspan><tspan class="cls-31" x="6.82" y="0">r</tspan><tspan class="cls-25" x="9.6" y="0">e</tspan><tspan class="cls-23" x="12.78" y="0"> </tspan><tspan class="cls-25" x="14.67" y="0">Ansp</tspan><tspan class="cls-3" x="29.98" y="0">r</tspan><tspan class="cls-25" x="32.76" y="0">echpa</tspan><tspan class="cls-28" x="51.04" y="0">r</tspan><tspan class="cls-15" x="54.19" y="0">tne</tspan><tspan class="cls-30" x="64.19" y="0">r</tspan><tspan class="cls-25" x="67.3" y="0">in</tspan></text>
+  <text class="cls-13" transform="translate(24.79 112.1)"><tspan class="cls-24" x="0" y="0">Reb</tspan><tspan class="cls-29" x="11.65" y="0">r</tspan><tspan class="cls-24" x="14.36" y="0">einst</tspan><tspan class="cls-14" x="29.12" y="0">r</tspan><tspan class="cls-18" x="31.65" y="0">asse 64</tspan><tspan class="cls-24" x="0" y="11.17">8106 Re</tspan><tspan class="cls-2" x="28.18" y="11.17">g</tspan><tspan class="cls-18" x="31.81" y="11.17">ensdorf</tspan></text>
+  <text class="cls-13" transform="translate(21.98 54.89)"><tspan x="0" y="0">+41 44 870 20 00</tspan><tspan x="0" y="11.17">+41 79 870 20 00</tspan></text>
+  <text class="cls-27" transform="translate(23.97 84.01)"><tspan class="cls-8" x="0" y="0">in</tspan><tspan class="cls-10" x="6.55" y="0">f</tspan><tspan class="cls-8" x="8.86" y="0">o</tspan><tspan class="cls-6" x="12.47" y="0">@</tspan><tspan class="cls-11" x="17.53" y="0">homeliving-ca</tspan><tspan class="cls-9" x="62.64" y="0">r</tspan><tspan class="cls-12" x="65.37" y="0">e</tspan><tspan class="cls-11" x="68.55" y="0">.ch</tspan><tspan class="cls-7"><tspan class="cls-17" x="0" y="11.17">ww</tspan><tspan class="cls-5" x="9.92" y="11.17">w</tspan><tspan class="cls-17" x="14.18" y="11.17">.homeliving-ca</tspan><tspan class="cls-19" x="61.91" y="11.17">r</tspan><tspan class="cls-16" x="64.65" y="11.17">e</tspan><tspan class="cls-17" x="67.82" y="11.17">.ch</tspan></tspan></text>
+  <image width="225" height="225" transform="translate(184.39 87.76) scale(.18)" xlink:href="qrsite.png"/>
+  <path class="cls-32" d="m6.24,50.43c-.24-.59-.88-.9-1.5-.73l-2.78.76c-.55.15-.93.65-.93,1.22,0,7.82,6.34,14.16,14.16,14.16.57,0,1.07-.38,1.22-.93l.76-2.78c.17-.61-.15-1.25-.73-1.5l-3.03-1.26c-.52-.21-1.11-.07-1.46.37l-1.28,1.56c-2.23-1.05-4.03-2.85-5.08-5.08l1.56-1.27c.43-.35.58-.95.37-1.46l-1.26-3.03h0Z"/>
+  <path class="cls-1" d="m17.06,80.69c.27.19.41.51.36.83l-1.7,11.04c-.04.26-.2.48-.42.61s-.5.14-.74.04l-3.17-1.32-1.82,1.97c-.24.26-.61.34-.93.21s-.54-.44-.54-.79v-2.22c0-.11.04-.21.11-.28l4.45-4.85c.15-.17.15-.42-.01-.58s-.42-.17-.58-.02l-5.4,4.79-2.34-1.17c-.28-.14-.46-.42-.47-.73s.16-.6.43-.76l11.89-6.79c.28-.16.63-.15.9.04h0Z"/>
+  <path class="cls-4" d="m20.44,114.44c0,.5-.41.89-.88.89h-.88l.02,4.42c0,.07,0,.15-.01.22v.44c0,.61-.49,1.1-1.1,1.1h-.44s-.06,0-.09,0c-.04,0-.08,0-.12,0h-1.56c-.61,0-1.1-.49-1.1-1.1v-2.43c0-.49-.39-.88-.88-.88h-1.76c-.49,0-.88.39-.88.88v2.43c0,.61-.49,1.1-1.1,1.1h-1.54s-.08,0-.12,0c-.03,0-.07,0-.1,0h-.44c-.61,0-1.1-.49-1.1-1.1v-3.09s0-.05,0-.08v-1.92h-.89c-.5,0-.88-.39-.88-.89,0-.25.08-.47.28-.66l7.07-6.16c.19-.19.41-.22.61-.22s.41.06.58.19l7.04,6.19c.22.19.33.41.3.66Z"/>
 </svg>
