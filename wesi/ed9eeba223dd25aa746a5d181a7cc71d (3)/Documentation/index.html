@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title> Documentation</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/colorbox.css" />
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div id="mode" >
+            <div class="dark">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>lightmode</title>
+                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+                </svg>
+            </div>
+            <div class="light">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>darkmode</title>
+                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                </svg>
+            </div>
+        </div>
+
+
+
+        <section id="top" class="section docs-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="top-docs-heading">
+                            <div class="header-logo"><img src="assets/images/coderplace.png" alt="Logo" class="img-logo"></div>
+                        </div>
+                        <div class="big-title text-center">
+                            <h1>Best WooCommerce Theme</h1>
+                            <p class="lead">Theme Installation Guide</p>
+                        </div>
+                        <!-- end title -->
+                </div>
+                <!-- end 12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        </section>
+        <!-- end section -->
+
+
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="index-install">
+                        <nav class="docs-sidebar" data-spy="affix" data-offset-top="400" data-offset-bottom="200" role="navigation">
+                            <ul class="nav">
+                                <li><a href="#line00">Theme Installation Steps</a></li>
+                                <li><a href="#line1">1. Download Complete Layouts</a></li>
+                                <li><a href="#line2">2. Install Theme</a>
+                                    <ul class="nav sub-nav">
+                                        <li><a href="#line2_1">Method 1: Using Admin Panel</a></li>
+                                        <li><a href="#line2_2">Method 2: Via FTP Client</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#line3">3. Install & Setup Plugins</a>
+                                    <ul class="nav sub-nav">
+                                        <li><a href="#line3_1">- Contact Form</a></li>
+                                        <li><a href="#line3_2">- Elementor Settings</a></li>
+                                        <li><a href="#line3_3">- Global Layout</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#line4">4. Import Sample Data</a>
+                                    <ul class="nav sub-nav">
+                                        <!-- <li><a href="#line5_1">Delete Extra Pages</a></li> -->
+                                        <li><a href="#line4_2">Method 1: One Click Installation</a></li>
+                                        <li><a href="#line4_3">Method 2: Manually Installation</a>
+                                            <ul class="nav sub-nav">
+                                                <li><a href="#line4_3_1">i. Import Sample Data</a>
+                                                    <ul class="nav sub-nav">
+                                                        <li><a href="#line4_3_1_1">- Import XML Data</a></li>
+                                                        <li><a href="#line4_3_1_2">- Slider Data </a></li>
+                                                        <li><a href="#line4_3_1_3">- Customizer Data </a></li>
+                                                        <li><a href="#line4_3_1_4">- Widget Data </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#line4_3_2">ii. Page Configuration</a>
+                                                    <ul class="nav sub-nav">
+                                                        <li><a href="#line4_3_2_1">- Home & Blog page</a></li>
+                                                        <li><a href="#line4_3_2_2">- Woo Pages</a></li>
+                                                        <li><a href="#line4_3_2_3">- Menu Setting</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#line5">5. Customize Setting</a>
+                                        <ul class="nav sub-nav">
+                                            <li><a href="#line5_1">- Theme Color Palette Setting</a></li>
+                                            <li><a href="#line5_2">- Page/Post Settings</a></li>
+                                            <li><a href="#line5_3">- Buttons Settings</a></li>
+                                            <li><a href="#line5_4">- Header,Footer & Sidebar Settings</a></li>
+                                        </ul>
+                                </li>
+                                <li><a href="#line6">6. Store is not appear same like Theme demo, what can I do?</a></li>
+                                <li><a href="#Troubleshooting">6. Troubleshooting</a>
+                                    <ul class="nav sub-nav">
+                                        <li><a href="#line6_1">- Server Configuration Conflicts</a></li>
+                                        <li><a href="#line6_2">- Demo Content Import Fails. </a></li>
+                                        <li><a href="#line6_3">- 500 Internal Server Error </a></li>
+                                        <li><a href="#line6_4">- Elementor Stuck on Loading Screen </a></li>
+                                        <li><a href="#line6_5">- Revolution Slider Error: Slider with alias not found. </a></li>
+                                        <li><a href="#line6_6">- Package Issue </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p></p>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <p id="line00">Thank You For purchasing Our WooCommerce Theme.</p>
+
+                        <p>Our team would be happy to help when you require. If you have any queries regarding the Theme, please feel free to drop us your query. We will get back to you with answers to your query within 24 hours. </p>
+
+                        <p>We Provide basetheme.zip as Parent Theme And xyz.zip as Child-Theme.<p><hr>
+
+                            <h2 style="padding-top:40px;">NOTE: The quick installation is for first time installation of theme on fresh
+                                WordPress.</h2>
+                            <ul>
+                                <li><strong>Please, read the whole section, before attempting to install the theme.<br></strong></li>
+                                <li><strong>We recommend to use this theme on a clean installation.<br></strong></li>
+                                <li><strong>IT IS RECOMMEND TO ALWAYS BACKUP YOUR SYSTEM BEFORE MAKING ANY UPGRADES OR CHANGES! </strong>
+                                </li>
+                            </ul>
+                            <br/>
+                            <!-- <div id="videostutorials">
+                                    <div class="link">
+                                        <a href="https://www.youtube.com/embed/2URpFtd1L1I?autoplay=1;rel=0&amp;wmode=transparent"
+                                        target="_blank"
+                                        class="uploadtheme"><img src="assets/images/upload/video.jpg" alt="" class="img-responsive img-thumbnail img-thumb"></a>
+	                                    <h2>Quick- OneClick Demo Installation</h2>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://www.youtube.com/embed/XgdOln2zwI8?autoplay=1;rel=0&amp;wmode=transparent"
+                                           target="_blank"
+                                           class="uploadtheme"><img src="assets/images/upload/video.jpg" alt="" class="img-responsive img-thumbnail img-thumb"></a>
+	                                       <h2>Quick Theme Installation</h2>
+                                    </div>
+                            </div>
+                            <br/><br/> -->
+                    <!-- 1. Download Complete 45+ Layouts -->
+                    <section id="line1" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">1. Download Complete Layouts </h2><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>In order to download the whole package of All layouts, you need to download our theme package from your account.</p>
+                                <!-- <p><strong>Go to : </strong><a href="https://addons.Wordpress.com/en/agency-products.php" target="_blank">https://addons.Wordpress.com/en/agency-products.php</a></p> -->
+                                <p>A zip file will be downloaded to your PC</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <!-- 2. How to Install Theme -->
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">2. Upload Theme</h2><hr>
+                                <h4 id="line2_1" class="sub-title">Method 1: Using Admin Panel</h4><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ol>
+                                    <li>In your WordPress admin, go to <strong>Appearance > Themes</strong>.</li>
+                                    <li>Click Add New, then <strong>Upload Theme Basetheme(Parent Theme)</strong>.</li><br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/addtheme.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/addtheme.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/uploadtheme.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/uploadtheme.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <li>Click Choose file and select the downloaded <strong>basetheme.zip</strong> file from your package.<strong>Click Install Now.</strong>.</li>
+                                    <br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/downloazip.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/downloazip.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/installtheme.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/installtheme.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <p><strong>Do Not Active</strong></p>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/activenot.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/activenot.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <li>Click Add New, then <strong>Upload Theme</strong>.</li>
+                                    <li>Click Choose file and select the download <strong>xyz.zip(Child Theme)</strong>file from your package. <strong>Click Install Now and Active Now<strong></li>
+                                    <br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/childupload.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/childupload.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                    <div class="img-screenshot">
+                                        <a href="assets/images/upload/importtheme.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/importtheme.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                    </div><br/>
+                                </ol>
+                                <p>Please, read the whole section, before attempting to install the theme.</p>
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>We recommend to use this theme on a clean installation and always backup your system before making any upgrades or changes!</p>
+                                </div>
+
+                                <!-- Method 2: Via FTP Client -->
+                                <h4 id="line2_2" class="sub-title">Method 2: Via FTP Client </h4>
+                                <hr>
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>Do not upload the Entire Zip File you get from Package. Please follow following Steps to upload theme via FTP:
+                                    </p>
+                                </div>
+                                <p>Step 1: Extract the package, you have downloaded.<br>
+                                Step 2: After extracting zip file you will get one theme folder.<br>
+                                Step 3: Upload the theme folder under "wp-content/themes" directory shown below..</p>
+
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/uploadtheme1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/uploadtheme1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <!-- How To Install & Setup Plugins -->
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">3. Install & Setup Plugins </h2><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <p>Go to <strong>Appearance > Click on Begin Installing Plugins</strong>. </p>
+
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/pluginlist.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/pluginlist.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+
+                        <p>Select install to installed all required and recommend plugins</p>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/installplugin.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/installplugin.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p>Wait for a While Plugins has been successfully installed and activate too.</p>
+
+                        <!-- Plugin Configuration -->
+                        <h4 id="line3_1" class="sub-title"> Contact Form 7 Configuration </h4>
+                        <hr>
+                        <p>if contact form not avialable in your store thene follow below steps: </p>
+                        <p>After installing the contact form 7 plugins you have to add some HTML code to create contact form.</p>
+                            <span class="span-text">1. admin panel > LeftPanel > Click on Contact.</span><br>
+                            <span class="span-text">2. Click on 'Add New' to create new contact form.</span><br>
+                            <span class="span-text">3. Then (if code not same as below copde then) copy the code and paste it to create the contact Form same as our live demo.</span><br/><br/>
+                        <pre class="brush: html;">
+                            &lt;div class=&quot;contact-col-1&quot;&gt;[text* your-name placeholder &quot;Name&quot;]
+
+                            [email* your-email placeholder &quot;Email Address&quot;]&lt;/div&gt;
+
+                            [textarea* textarea placeholder &quot;Message&quot;]
+
+                            [submit &quot;Contact&quot;]
+                            </pre>
+                         <div class="img-screenshot">
+                            <a href="assets/images/upload/contactcode.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/contactcode.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p>
+                         4. Also you have to edit mail field from 'Mail' tab > Save.<br>
+                         <p>You can display contact form in any page by using its Shortcode. </p>
+                         <div class="img-screenshot">
+                            <a href="assets/images/upload/contact_formsetting.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/contact_formsetting.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        </p>
+
+                        <h4 id="line3_2" class="sub-title"> Elementor Configuration </h4>
+                        <hr>
+                        <p>After installing Elemtor plugins and Before Install Theme data or oneclick installation, You have to set below settings : </p>
+
+                        <span class="span-text"> 1. admin panel > LeftPanel > Click on Elementor > Settings > General<br>
+                        2. Checking box (To inherit the colors and font from your theme).<br>
+                         &nbsp;like : <br>
+                         &nbsp; &nbsp; - Post Types<br>
+                         &nbsp; &nbsp; - Disable Default Colors<br>
+                         &nbsp; &nbsp; - Disable Default Fonts.<br>
+                         &nbsp; &nbsp; (Note : do  not check Usage Data Sharing.)<br>
+                         3. Save Changes.</span><br><br>
+                         <div class="img-screenshot">
+                            <a href="assets/images/upload/elementor-configuration.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/elementor-configuration.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p>
+
+                        <h4 id="line3_3" class="sub-title"> Global Layout Settings  </h4>
+                        <hr>
+                        <p>From any Elementor page or post editor > click the hamburger menu in the upper left corner of the Widget Panel</p>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/site_setting.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/site_setting.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            <br><br><p>Navigate to Site Settings. </p>
+                            <a href="assets/images/upload/site_setting1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/site_setting1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            <br><br><p>Settings > Layout. </p>
+                            <a href="assets/images/upload/site_setting2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/site_setting2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div><br>
+                        <ol>
+                            <li><strong>Content Width (px)</strong>  :  <span class="span-text">Set a default width for your content area</span></li>
+                            <li><strong>Widgets Space (px)</strong>  :  <span class="span-text">Set the space between widgets</span></li>
+                            <li><strong>Page Title Selector</strong>  :  <span class="span-text">If you want to hide your page title, enter its CSS selector here</span></li>
+                            <li><strong>Stretched Section Fit To</strong>  :  <span class="span-text">Choose the parent element to which stretched elements will fit</span></li>
+                            <li><strong>Default Layout</strong>  :  <span class="span-text">Set the page layout for new pages, choosing from either Default, Elementor Canvas, or Elementor Full Width</span></li>
+                        </ol>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/site_setting3.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/site_setting3.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <ol>
+                            <li><strong>Tablet</strong>  :  <span class="span-text"> Set the breakpoint for tablet devices. Below this breakpoint, and above the mobile breakpoint, tablet layout will appear (Default: 1025px)</span></li>
+                            <li><strong>Mobile</strong>  :  <span class="span-text">Set the breakpoint for mobile devices. Below this breakpoint, mobile layout will appear (Default: 768px)</span></li>
+                        </ol>
+                    </section>
+                    <!-- end section -->
+
+                    <!-- Image Settings -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">4. Import Sample Data </h2><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i>After installing the woocommerce plugins you have to delete extra pages created by WooCommerce plugin. </p>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Go to pages by click on pages.</span></li>
+                            <li>Step 2  :  <span class="span-text">Select all pages by click on title.</span></li>
+                            <li>Step 3  :  <span class="span-text">Click on select move to trash.</span></li>
+                            <li>Step 4  :  <span class="span-text">Apply.</li>
+                        </ul>
+                        <br>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/deleteextrapage1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/deleteextrapage1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>Step 5  :  <span class="span-text">Select all pages by click on title.</span></li>
+                            <li>Step 6  :  <span class="span-text">Click on Delete permanently.</span></li>
+                            <li>Step 7  :  <span class="span-text">Apply.</span></li>
+                            or
+                            <li>Step 5  :  <span class="span-text">direct click on 'Empty Trash'.</span></li>
+                        </ul>
+                            <br>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/deleteextrapage2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/deleteextrapage2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>We are providing sample data to look your store like our Demo</p>
+                            <div class="intro2 clearfix">
+                                <p><i class="fa fa-exclamation-triangle"></i>Before this step please check all required plugins are activated and check your server setting first. below details are for server settings. </p>
+                            </div>
+                            <br>
+                            <ul>
+                                <li>upload_max_filesize (512M)</li>
+                                <li>max_input_time (300)</li>
+                                <li>memory_limit (512M)</li>
+                                <li>max_execution_time (300)</li>
+                                <li>post_max_size (512M)</li>
+                            </ul>
+                            <br>
+                            <ul>
+                        <!-- One Click Installation  -->
+                        <h3 id="line4_2" class="sub-title"> One Click Installation <hr> </h3>
+
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Go to Admin Panel > Appearance > Import Demo Data</span></li><br/>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/oneclick1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/oneclick1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div><br>
+                            <li>Step 2  :  <span class="span-text">click on 'Import Demo Data' button</span></li>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/oneclick2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/oneclick2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div><br>
+                            <li>Step 3  :  <span class="span-text">Continue & Import</span></li>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/oneclick3.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/oneclick3.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div><br>
+                            <span class="span-text">then wait for while.....All Data is imported.</span><br>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/oneclick4.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/oneclick4.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+                        </ul>
+
+
+                        <!-- Manually Installation  -->
+                        <h3 id="line4_3" class="sub-title"> Manually Installation  <hr></h3>
+                        <p id="line4_3_1"> Please Follow below steps to importa all store data manually: </p>
+                            <h4 id="line4_3_1_1" class="sub-title"> Import XML file   </h4>
+                            <hr>
+                                <li>Step 1  :  <span class="span-text">Go to Admin Panel > Appearance > Tools > Click on Import.  </span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 2  :  <span class="span-text">Click on Install Now to install WordPress Installer. </span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 3  :  <span class="span-text">Click on Activate Plugin & Run Importer to activate WordPress Installer.</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata3.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata3.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 4  :  <span class="span-text">Click on Browse button to select the Sample Data file.</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata4.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata4.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 5  :  <span class="span-text">Select XML formate (theme_name.xml) sample data file from Theme Package. Then Click on Upload File and Import button.</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata5.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata5.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 6  :  <span class="span-text">Select the Author you want to assign the user of sample data as author, Check 'Download and import file attachments' > Submit </span><br></li><br>
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>If you are not checking this checkbox, you will not be able to get the images and you will get "Failed to import Media". Still do not bother about this message. Only the thing is you will not get images, which you definitely will replace for your store.</p>
+                                </div><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata6.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata6.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li> <span class="span-text">then wait for while.....All XML Data is imported..</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-sampledata7.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-sampledata7.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+
+                            <h4 id="line4_3_1_2" class="sub-title"> Slider Configuration  </h4>
+                            <hr>
+                                <ul>
+                                <li>Step 1  :  <span class="span-text">Import revolution slider from Admin > Revolution Slider</span></li>
+                                <li>Step 2  :  <span class="span-text">Click on Manual Import > Browse the theme_homeslider.zip files from sample data</span></li>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-slider.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-slider.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 3  :  <span class="span-text">Click on import Slider button -> Submit.</span></li>
+                                <li> <span class="span-text">then wait for while...Slider imported.</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/import-slider2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/import-slider2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                </ul>
+
+
+                            <h4 id="line4_3_1_3" class="sub-title"> Import Customizer data  </h4>
+                            <hr>
+                            <p>You have already installed Customizer Export\Import Plugin.</p>
+                                <ul>
+                                <li>Step 1  :  <span class="span-text">Appearance -> Customizer</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/customizer-data1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/customizer-data1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 2  :  <span class="span-text">Click on Export/Import</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/customizer-data2.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/customizer-data2.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li>Step 3  :  <span class="span-text">Browse Package_name\Sample Data\themename_customizer_export.dat <br> > select checkbox Download and Import Files?</span></li><br>
+                                <li>Step 4: Import button. </li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/customizer-data3.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/customizer-data3.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                <li> <span class="span-text">wait for while your data is imported...</span></li><br>
+                                <div class="img-screenshot">
+                                    <a href="assets/images/upload/customizer-data4.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/customizer-data4.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div><br>
+                                </ul>
+
+                            <h4 id="line4_3_1_4" class="sub-title"> Widget data  </h4>
+                            <hr>
+
+                                <ul>
+                                <span class="span-text"><li>Step 1  :  Tools -> Widget Importer & Exporter.</span></li>
+                                <li>Step 2  :  <span class="span-text"><strong>Browse</strong> and <strong>Select</strong> package_name \ Sample Data \ themename_widgets_settings.wie file from package.</span></li>
+                                <li>Step 3  :  <span class="span-text">Import Widgets.</span></li>
+                                <p style="color:#fa6068">If you face any issue here then please follow below steps to import widgets data</p>
+                                <li>Step 1  :  <span class="span-text"><strong>Open</strong> package_name\Sample Data\themename_widgets_settings.wie file from package.</span></li>
+                                <li>Step 2  :  <span class="span-text">copy content from .wie file</span></li>
+                                <li>Step 3  :  <span class="span-text">click on 'copy and paste' link.</span></li>
+                                <li>Step 4  :  <span class="span-text">Paste the contents of your .wie file in box.</span></li>
+                                <li>Step 5  :  <span class="span-text">click on Import Widgets.</span></li></span>
+                                <div class="img-screenshot"><br>
+                                    <a href="assets/images/upload/wie_paste.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/wie_paste.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                                </div>
+
+                                <br>
+                                <li> Wait for while...Widgets data imported.</li>
+                                </ul>
+                    </section>
+                    <!-- end section -->
+
+                    <!-- TM Feature Settings -->
+
+                    <section id="line4_3_2" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Page Configuration <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <h4 id="line4_3_2_1" class="sub-title"> Home & Blog page</h4>  <hr>
+                        To display Homepage as landing page and posts listing page as Blog page follow below Steps:
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Go to Admin > Settings > Reading > Reading settings.</span> </li>
+                            <li>Step 2  :  <span class="span-text">Select "A Static Page" option.</span></li>
+                            <li>Step 3  :  <span class="span-text">Select Homepage as Front Page & Blog page as Posts Page.</span></li>
+                            <li>Step 4  :  <span class="span-text">Save Changes</span></li>
+                        </ul></span>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/home-selection.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/home-selection.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+
+                        <h4 id="line4_3_2_2" class="sub-title">WooCommerce pages Configuration</h4>
+                        <strong>Admin Panel > WooCommerce > Settings :</strong>
+                        <hr>
+                        <p>click here for more infomation about <a href="https://woocommerce.com/document/configuring-woocommerce-settings/#shipping-settings-shipping-options"><u>WooCommerce setting</u> </a></p>
+                        <br>
+                        <strong> Product Tab : </strong><br><br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Click on Products tab</span></li>
+                            <li>Step 2  :  <span class="span-text">Select "Shop" as Shop Page.</span></li>
+                            <li>Step 3  :  <span class="span-text">Save Changes</span></li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/woo_product_setting1.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/woo_product_setting1.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <strong>Payments Tab :</strong><br><br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Go to: WooCommerce > Settings > Payments to control which payment gateways are enabled.</span></li>
+                            <li>Step 2  :  <span class="span-text">Installed gateways are listed and can be dragged and dropped to control the order in which they display to customers on the checkout.</span></li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/payment_setting.gif" data-rel="prettyPhoto"><img src="assets/images/upload/payment_setting.gif" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <p>Another way to configure settings is to select Set Up or Manage. You can also use the Enabled toggle to turn a gateway on or off:</p>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/payment_setting2.gif" data-rel="prettyPhoto"><img src="assets/images/upload/payment_setting2.gif" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <strong>Account & Privacy Tab :</strong><br><br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Click on Accounts & Privacy tab</span></li>
+                            <li>Step 2  :  <span class="span-text">Check "Allow customers to create an account on the My account page " in Guest checkout as you want to display</span></li>
+                            <li>Step 3  :  <span class="span-text">and Below Privacy policy select "term and Conditions" Page In Privacy Page as you want to display</span></li>
+                            <li>Step 4  :  <span class="span-text">Save Changes</span></li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/account_privacy_setting.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/account_privacy_setting.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+
+                        <strong>Advanced Tab :</strong><br><br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Click on Advanced tab</span></li>
+                            <li>Step 2  :  <span class="span-text">Select "Cart" as Cart Page,"Checkout" as Checkout Page, "My Account" as My Account Page, "Terms and Conditions" as Terms and Conditions Page.</span></li>
+                            <li>Step 3  :  <span class="span-text">Save Changes</span></li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/woo_advance.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/woo_advance.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <br>
+                        <strong>> Shipping Tab :</strong><br><br>
+                        <ul>
+                            <li>Step 1  :  <span class="span-text">Click on Shipping tab</span></li>
+                            <li>Step 2  :  <span class="span-text">Check "Allow customers to create an account on the My account page " in Guest checkout as you want to display .</span></li>
+                            <li>Step 3  :  <span class="span-text">and Below Privacy policy select "term and Conditions" Page In Privacy Page as you want to display</span></li>
+                            <li>Step 4  :  <span class="span-text">Save Changes</span></li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/woo_shipping.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/woo_shipping.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+
+                        <h4 id="line4_3_2_3" class="sub-title">Menu Setting</h4>
+                        <strong>Admin Panel > Appearance > Menu :</strong>
+                        <hr>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/menu-setting.jpg" data-rel="prettyPhoto">
+                                <img src="assets/images/upload/menu-setting.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <!-- How To Customize Setting -->
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">5. Customize Setting </h2><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <p>Go to <strong>Appearance</strong> > Click on <strong>Customize</strong>. </p>
+
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/customizelist.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/customizelist.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+
+                        <!-- Color Palette -->
+                        <h4 id="line5_1" class="sub-title"> Color Palette Settings </h4>
+                        <hr>
+                        <p>In Customize Follow Below Steps.</p>
+                         1. Customize > General > Colors > Global Palette. <br/><br/>
+                         <div id="colorpaletteid" class="img-screenshot">
+                            <a href="assets/images/upload/colorpalette.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/colorpalette.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p>
+                        <p>The color palette is not a bunch of colors you might want to use on your site.</p>
+                        <p>The colors are already used throughout your site to define the subtle feel of your site.
+                            These colors define the “skin” that your site is using and establishes the base you design from.
+                            When you adjust the color palette you are adjusting the site as these colors are used in various places throughout the site to keep your site within your design system.</p>
+                            <ul>
+                                <li>Palette 1 . Accent</li>
+                                <li>Palette 2 . Accent – alt (think of what happens when you hover over the accent color).</li>
+                                <li>Palette 3 . Strongest text</li>
+                                <li>Palette 4 . Strong Text</li>
+                                <li>Palette 5 . Medium text</li>
+                                <li>Palette 6 . Subtle text – borders</li>
+                                <li>Palette 7 . Subtle Background (light enough that strong text is readable)</li>
+                                <li>Palette 8 . Lighter Background (light enough that medium text is readable)</li>
+                                <li>Palette 9 . (white or very close to white).</li>
+                            </ul>
+                            <p>Set Colors And Click On Publish Button.</p>
+                            <div class="img-screenshot">
+                            <a href="assets/images/upload/publish.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/publish.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+                        </p>
+
+                        <h4 id="line5_2" class="sub-title"> Page/Post Settings </h4>
+                        <hr>
+                        <br/>
+                         1. Customize > Page Layout
+                         <br/><br/>
+                        <p>The Basetheme doesn’t use any page templates to determine how the page layout will show, it’s all done through page/post settings. You can define settings that will apply globally to your page or post through the customizer. <strong>Go to appearance > customizer > page layout</strong> or <strong>appearance > customizer > blog posts > single post layout</strong> to find these settings.</p>
+                         <div class="img-screenshot">
+                            <a href="assets/images/upload/pagelayout.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/pagelayout.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div><br/>
+
+                        <p>You can also control these settings for each and every page of your site which allows you to make custom landing pages with no header or a boxed page with a sidebar. You access these settings from within the post edit screen. Click on the page edit icon in the top right corner.</p>
+
+                        Page Setting
+                        <br/><br/>
+                        <div class="img-screenshot">
+                           <a href="assets/images/upload/pagesetting.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/pagelayout.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                       </div><br/>
+
+                        <p>You can Set Here Your Theme Post Layout And Publish </p>
+                            <div class="img-screenshot">
+                                    <a href="assets/images/upload/publish.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/publish.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+                        </p>
+
+                        <h4 id="line5_3" class="sub-title"> Button Settings  </h4>
+                        <hr>
+                        1. To get started go to Appearance > Customize in the WordPress admin then General and Buttons.
+                        <br/><br/>
+                        <div class="img-screenshot">
+                           <a href="assets/images/upload/buttonstyle.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/buttonstyle.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p><strong>Here you can change</strong></p>
+                        <span class="span-text">
+                        <ul>
+                            <li>Text color in the initial and hover states</li>
+                            <li>Background color in the initial and hover states</li>
+                            <li>Border color in the initial and hover states</li>
+                            <li>Borders for Desktop, Tablet and Mobile</li>
+                            <li>Border Radius for Desktop, Tablet and Mobile</li>
+                            <li>Font family, Font weight, Font size</li>
+                            <li>Padding for Desktop, Tablet and Mobile</li>
+                        </ul></span>
+                        <ol id="line5_4">
+                            <h4><li>Header Setting</li></h4>
+                            <p>Admin panal => appearance => Customizer => Header</p>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/header-settings.jpg" data-rel="prettyPhoto">
+                                    <img src="assets/images/upload/header-settings.jpg" alt="" class="img-responsive img-thumbnail img-thumb" >
+                                </a>
+                            </div><br/><br/>
+                            <h4><li>Footer Setting</li></h4>
+                            <p>Admin panal => appearance => Customizer => Footer</p>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/footer-settings.jpg" data-rel="prettyPhoto">
+                                    <img src="assets/images/upload/footer-settings.jpg" alt="" class="img-responsive img-thumbnail img-thumb" >
+                                </a>
+                            </div><br/><br/>
+                            <h4><li>Transparent Setting</li></h4>
+                            <p>Or you can enable a transparent header from the Transparent Header tab. From there you can enable/disable it for specific post types and pages.</p>
+                            <p>Also from the Transparent Header tab, you can choose to enable/disable the transparent header for mobile and you also have the ability to set a different logo when the transparent header is enabled. </p>
+                            <br/>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/transparent-settings.jpg" data-rel="prettyPhoto">
+                                    <img src="assets/images/upload/transparent-settings.jpg" alt="" class="img-responsive img-thumbnail img-thumb" >
+                                </a>
+                            </div>
+                            <h4><li>Sidebar Setting</li></h4>
+                            <p>Admin panal => appearance => Customizer => General => Sidebar</p>
+                            <br/>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/sidebar-settings.jpg" data-rel="prettyPhoto">
+                                    <img src="assets/images/upload/sidebar-settings.jpg" alt="" class="img-responsive img-thumbnail img-thumb" >
+                                </a>
+                            </div>
+                        </ol>
+                        <p>You can Set Here Your Theme Button Settings And Publish </p>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/publish.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/publish.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+                        </p>
+                    </section>
+
+                    <!-- One Click Installation  -->
+                    <h2 id="line6" class="dark-text"> Store is not appear same like Theme demo, what can I do? </h2><hr>
+
+                    <p>If the changes you’ve made look right in the editor, but they aren’t being reflected on the live site, this is often due to a caching issue. When your styles are not applied online, please follow the steps listed below for dealing with cache issues:</p>
+                    <ul>
+                        <li>1. Go to Elementor > Tools > Regenerate CSS and click the Regenerate Files button. </li><br>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/elementor-tools.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/elementor-tools.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div><br>
+                        <li><strong>2. Update your page. You may need to make a small change to enable the Update button. </strong></li>
+                        <br>
+                        <li>3. Clear all cache including server cache if it exists, any WordPress caching plugins you are using, and your own browser cache. You can also try checking in another browser, or in an incognito browser.</li>
+                        <p>If this does not solve the problem, please see more possible solutions here:<br><u><a href="https://elementor.com/help/changes-dont-appear-online/">My changes do not appear online. What can I do?</a></u></p>
+                    </ul>
+
+
+                    <!-- Troubleshooting -->
+
+                    <section id="Troubleshooting" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Troubleshooting Theme Installation </h2><hr>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <p>The eCommerce theme should be installed without any errors, but here are the most common errors and the solutions.</p>
+                       <br>
+
+                       <h4 id="line6_1" class="sub-title"> 500 Internal Server Error</h4>  <hr>
+                        There are many reasons why these errors occur in WordPress. One of the reasons it is PHP memory limits set too low. You should contact your hosting provider and ask them to increase those limits to a minimum as follows:
+                        <br> <br><ul>
+                                <li>max_execution_time: 300</li>
+                                <li>memory_limit: 500M</li>
+                                <li>post_max_size: 512M</li>
+                                <li>upload_max_filesize: 512M</li>
+                            </ul>
+
+
+
+                        <h4 id="line6_2" class="sub-title"> Demo Content Import Fails.</h4>  <hr>
+                        If the import stalls and fails to respond after a few minutes, or it fails with a simple error message like Import failed, You are suffering from PHP configuration limits that are set too low to complete the process. You should contact your hosting provider and ask them to increase those limits to a minimum as follows:
+                        <br><br> <ul>
+                                <li>max_execution_time: 300</li>
+                                <li>memory_limit: 512M</li>
+                                <li>post_max_size: 512M</li>
+                                <li>upload_max_filesize: 512M</li>
+                            </ul>
+
+
+                            <h4 id="line6_3" class="sub-title"> Server Configuration Conflicts</h4>  <hr>
+                            If you are having hosting or server difficulties using Elementor, we’ve included a simple switch that may solve your issue.
+                            <ul>
+                                <li>go to Elementor > Settings > Advanced, and under ‘Editor Loader’, . </li>
+                                <li>enable ‘Switch front-end editor loader method’</li>
+                            </ul>
+                            <div class="img-screenshot">
+                                <a href="assets/images/upload/Server-Configuration-Conflicts.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/Server-Configuration-Conflicts.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                            </div>
+
+                        <h4 id="line6_4" class="sub-title"> How To Fix Elementor Stuck on Loading Screen</h4>  <hr>
+                        <ul>
+                            <li>go to Elementor > Settings > Advanced, and under ‘Editor Loader’, . </li>
+                            <li>enable ‘Switch front-end editor loader method’</li>
+                        </ul>
+                        <div class="img-screenshot">
+                            <a href="assets/images/upload/elementor-stuck.jpg" data-rel="prettyPhoto"><img src="assets/images/upload/elementor-stuck.jpg" alt="" class="img-responsive img-thumbnail img-thumb" ></a>
+                        </div>
+                        <p>If this does not solve the problem, please see more possible solutions here:<br><u><a href="https://elementor.com/help/elementor-not-loading/">Stuck on Loading Screen?</a></u></p>
+
+
+                        <h4 id="line6_5" class="sub-title">Revolution Slider Error: Slider with alias not found.</h4><hr>
+                        This error message means that the slider added to the page does not exists or is named different and cannot not be loaded.
+
+                        <br>
+
+                        <h4 id="line6_6" class="sub-title">package could not be installed. The theme is missing the style.css stylesheet.</h4><hr>
+                        One of the most common reasons people have issues is because they try uploading the full zip that includes demo content, theme, documentation…etc which displays the “The package could not be installed. The theme is missing the style.css stylesheet.” error. Please make sure you are uploading only the installable theme which is called xyz.zip.
+                        <br>
+                        <br>
+                        <h4 id="line6_6" class="sub-title">Are you sure you want to do this?</h4> <hr>
+                        It means you have an upload file size limit. You need to install the theme or plugins via FTP, or contact your hosting provider to increase the limit.
+                        <br>
+                        <br>
+                        <h4 id="line6_6" class="sub-title">White Screen Of Death or PHP Error Notice.</h4> <hr>
+                        A “white screen of death” happens when there is a PHP error on the site but WP_Debug isn’t enabled on the server. So the first thing to do would be to enable WP_Debug so you can read what the actual error is and thus fix the problem.
+                        <br>
+                        <br>
+
+                        <br>
+
+
+<hr>
+                    <ol style="color:#fa6068">
+                        <li>Please, read the whole section, before attempting to install the theme.</li>
+                        <li>We recommend to use this theme on a clean installation or existing shops without custom modifications.</li>
+                        <li>IT IS RECOMMEND TO ALWAYS BACKUP YOUR SYSTEM BEFORE MAKING ANY UPGRADES OR CHANGES!  </li>
+                    </ol>
+
+                    </section>
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.colorbox.js"></script>
+
+            <script>
+            jQuery(document).ready(function () {
+                jQuery(".uploadtheme").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
+                jQuery('a[href*=#]').bind('click', function (e) {
+                    e.preventDefault(); // prevent hard jump, the default behavior
+                    var target = jQuery(this).attr("href"); // Set the target as variable
+                    // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                    jQuery('html, body').stop().animate({
+                        scrollTop: jQuery(target).offset().top
+                    }, 600, function () {
+                        location.hash = target; //attach the hash (#jumptarget) to the pageurl
+                    });
+                    return false;
+                });
+                jQuery(window).scroll(function () {
+                    var scrollDistance = jQuery(window).scrollTop();
+                    jQuery('section').each(function (i) {
+                        if (jQuery(this).position().top <= scrollDistance) {
+                            jQuery('.menu li.toclevel-1 a.active').removeClass('active');
+                            jQuery('.menu li.toclevel-1 a').eq(i).addClass('active');
+                        }
+                    });
+                }).scroll();
+            });
+        </script>
+
+    <!-- <script src="assets/js/syntax-highlighter/scripts/shCore.js"></script> -->
+    <script src="assets/js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="assets/js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="assets/js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>

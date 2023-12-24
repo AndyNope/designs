@@ -1,0 +1,25 @@
+=============================
+WP02029 Update History
+==============================
+
+=============================
+Updated Date : 15-09-2023
+=============================
+++ Update Revolution Slider plugin
+
+
+=============================
+Updated Date : 20-02-2023
+=============================
+Version : Wordpress 6.1.x
+=============================
+++ Update Revolution Slider plugin
+++ Update Sample Data 
+
+
+Updated Date : 16-01-2023
+=============================
+Version : Wordpress 6.1.x
+=============================
+++ Update Revolution Slider plugin
+++ Update Sample Data 
